@@ -116,16 +116,16 @@ const [date,setDate]=useState("13-jan-26")
 
         {/* Importer Bank */}
         <div className="flex items-center">
-          <label className=" pr-2 ">Importer Bank</label>
-          <select className="h-[22px] w-[600px] border border-gray-300 px-1 bg-white">
+          <label className=" pr-3 "><span className='text-sm'>Importer Bank</span></label>
+          <select className="h-[26px] w-[390px] border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>...Select Any Value...</option>
           </select>
         </div>
 
         {/* Exporter Bank */}
         <div className="flex items-center">
-          <label className=" pr-2">Exporter Bank</label>
-          <select className="h-[22px] w-[600px] border border-gray-300 px-1 bg-white">
+          <label className="pr-3 "><span className='text-sm'>Exporter Bank</span></label>
+          <select className="h-[26px] w-[390px] border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>...Select Any Value...</option>
           </select>
         </div>
