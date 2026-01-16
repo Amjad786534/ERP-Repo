@@ -31,13 +31,13 @@ const [date,setDate]=useState("13-jan-26")
       </div>
 
 {/* Contract no and contract date */}
-      <div className='w-[1000px] border border-gray-400  mt-3 ml-2'>
+      <div className='w-full border border-gray-400  mt-3 ml-2'>
         <div className='w-1/2 flex justify-between mt-1'>
             <div className='flex'>
               <span className='text-sm px-2'>Contract No.</span>
               <span className='ml-7'>
                 <span className="text-red-500">*</span>
-                <input type="text" className="h-[22px] w-[110px] border bg-white border-gray-400 px-1" />
+                <input type="text" className="h-5.5 w-27.5 border bg-white border-gray-400 px-1" />
               </span>
             </div>
              <div className="flex items-center ">
@@ -49,7 +49,7 @@ const [date,setDate]=useState("13-jan-26")
                 type="text"
                 value={date}
                 onChange={(e)=>setDate(e.target.value)}
-                className="w-[110px] h-[22px] text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
+                className="w-27.5 h-5.5 text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
               />
               <span className="absolute right-1  text-gray-600">📅</span>
             </div>
@@ -62,24 +62,24 @@ const [date,setDate]=useState("13-jan-26")
             <span className='text-sm'>Seller / Exporter</span>
           </label>
           <span className="text-red-500">*</span>
-          <select className="h-[26px] w-[370px] border border-gray-400 px-1 bg-white outline-0 text-sm">
+          <select className="h-6.5 w-92.5 border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>..Select Any Value..</option>
           </select>
         </div>
         <span className=''>
-          <input type="text" className='py-4 border-2 border-gray-500 outline-0 w-[491px] mt-1 ml-2' />
+          <input type="text" className='py-4 border-2 border-gray-500 outline-0 w-full mt-1 ml-2' />
         </span>
         <div className="flex items-center mt-1">
           <label className=" text-right mr-4 mt-1 ml-2">
           <span className='text-sm'>Buyer/Customer</span>
           </label>
           <span className="text-red-500">*</span>
-          <select className="h-[26px] w-[370px] border border-gray-400 px-1 bg-white outline-0 text-sm">
+          <select className="h-6.5 w-92.5 border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>..Select Any Value..</option>
           </select>
         </div>
         <span className='mt-3'>
-          <input type="text" className='py-4 border-2 border-gray-500 outline-0 w-[491px] mt-1 ml-2' />
+          <input type="text" className='py-4 border-2 border-gray-500 outline-0 w-full mt-1 ml-2' />
         </span>
 
 
@@ -88,7 +88,7 @@ const [date,setDate]=useState("13-jan-26")
               <span className='text-sm px-2'>Customer Order</span>
               <span className='ml-2'>
                 <span className="text-red-500">*</span>
-                <input type="text" className="h-[22px] w-[110px] border bg-white border-gray-400 px-1" />
+                <input type="text" className="h-5.5 w-27.5 border bg-white border-gray-400 px-1" />
               </span>
             </div>
              <div className="flex items-center ">
@@ -100,7 +100,7 @@ const [date,setDate]=useState("13-jan-26")
                 type="text"
                 value={date}
                 onChange={(e)=>setDate(e.target.value)}
-                className="w-[110px] h-[22px] text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
+                className="w-27.5 h-5.5 text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
               />
               <span className="absolute right-1  text-gray-600">📅</span>
             </div>
@@ -108,7 +108,7 @@ const [date,setDate]=useState("13-jan-26")
           </div>
 
 
-        <div className="bg-white text-[11px] font-sans p-2">
+        <div className="bg-white text-xs font-sans p-2">
       <div className="space-y-1">
 
         {/* Customer Order # + Order Date */}
@@ -117,7 +117,7 @@ const [date,setDate]=useState("13-jan-26")
         {/* Importer Bank */}
         <div className="flex justify-between w-1/2">
           <label className=" pr-3 "><span className='text-sm'>Importer Bank</span></label>
-          <select className="h-[26px] w-[390px] border border-gray-400 px-1 bg-white outline-0 text-sm">
+          <select className="h-6.5 w-97.5 border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>...Select Any Value...</option>
           </select>
         </div>
@@ -125,7 +125,7 @@ const [date,setDate]=useState("13-jan-26")
         {/* Exporter Bank */}
         <div className="flex justify-between w-1/2">
           <label className="pr-3 "><span className='text-sm'>Exporter Bank</span></label>
-          <select className="h-[26px] w-[390px] border border-gray-400 px-1 bg-white outline-0 text-sm">
+          <select className="h-6.5 w-97.5 border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>...Select Any Value...</option>
           </select>
         </div>
@@ -139,7 +139,7 @@ const [date,setDate]=useState("13-jan-26")
                 type="text"
                 value={date}
                 onChange={(e)=>setDate(e.target.value)}
-                className="w-[110px] h-[22px] text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
+                className="w-27.5 h-5.5 text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
               />
               <span className="absolute right-1  text-gray-600">📅</span>
             </div>
@@ -152,7 +152,7 @@ const [date,setDate]=useState("13-jan-26")
                 type="text"
                 value={date}
                 onChange={(e)=>setDate(e.target.value)}
-                className="w-[110px] h-[22px] text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
+                className="w-27.5 h-5.5 text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
               />
               <span className="absolute right-1  text-gray-600">📅</span>
             </div>
