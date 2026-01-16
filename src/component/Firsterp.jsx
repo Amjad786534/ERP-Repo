@@ -131,30 +131,30 @@ const [date,setDate]=useState("13-jan-26")
         </div>
 
         {/* Ship Start Date + Ship Last Date */}
-        <div className="flex items-center">
-          <div className="flex items-center w-[420px]">
-            <label className=" pr-2">Ship.Start Date</label>
+        <div className="flex  justify-between w-1/2">
+         <div className="flex items-center ">
+            <label className="text-sm pr-2">Ship.Start Date</label>
             <div className="relative">
               <input
                 type="text"
-                value="13-Jan-26"
-                readOnly
-                className="h-[22px] w-[150px] border border-gray-300 px-1 pr-6 bg-gray-100"
+                value={date}
+                onChange={(e)=>setDate(e.target.value)}
+                className="w-[110px] h-[22px] text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
               />
-              <span className="absolute right-1 top-[3px] text-gray-600">📅</span>
+              <span className="absolute right-1  text-gray-600">📅</span>
             </div>
           </div>
 
-          <div className="flex items-center ml-6">
-            <label className=" pr-2">Ship.Last Date</label>
+          <div className="flex items-center ">
+            <label className="text-sm pr-2">Ship.Last Date</label>
             <div className="relative">
               <input
                 type="text"
-                value="13-Jan-26"
-                readOnly
-                className="h-[22px] w-[150px] border border-gray-300 px-1 pr-6 bg-gray-100"
+                value={date}
+                onChange={(e)=>setDate(e.target.value)}
+                className="w-[110px] h-[22px] text-sm border border-gray-300 px-1 pr-6 bg-gray-100"
               />
-              <span className="absolute right-1 top-[3px] text-gray-600">📅</span>
+              <span className="absolute right-1  text-gray-600">📅</span>
             </div>
           </div>
         </div>
