@@ -31,11 +31,11 @@ const [date,setDate]=useState("13-jan-26")
       </div>
 
 {/* Contract no and contract date */}
-      <div className='w-[1000px] border border-gray-400  mt-3 ml-2 bg-red-300'>
-        <div className='w-1/2 flex justify-between '>
+      <div className='w-[1000px] border border-gray-400  mt-3 ml-2'>
+        <div className='w-1/2 flex justify-between mt-1'>
             <div className='flex'>
               <span className='text-sm px-2'>Contract No.</span>
-              <span className=''>
+              <span className='ml-7'>
                 <span className="text-red-500">*</span>
                 <input type="text" className="h-[22px] w-[110px] border bg-white border-gray-400 px-1" />
               </span>
@@ -57,7 +57,7 @@ const [date,setDate]=useState("13-jan-26")
           </div>
 
 
-        <div className="flex items-center mt-2 ml-2">
+        <div className="flex items-center mt-1 ml-2">
           <label className=" text-right mr-4">
             <span className='text-sm'>Seller / Exporter</span>
           </label>
@@ -66,27 +66,27 @@ const [date,setDate]=useState("13-jan-26")
             <option>..Select Any Value..</option>
           </select>
         </div>
-        <span>
-          <input type="text" className='py-4 border-2 border-gray-500 outline-0 w-[498px]' />
+        <span className=''>
+          <input type="text" className='py-4 border-2 border-gray-500 outline-0 w-[491px] mt-1 ml-2' />
         </span>
-        <div className="flex items-center">
-          <label className=" text-right mr-1">
+        <div className="flex items-center mt-1">
+          <label className=" text-right mr-4 mt-1 ml-2">
           <span className='text-sm'>Buyer/Customer</span>
           </label>
           <span className="text-red-500">*</span>
-          <select className="h-[26px] w-[390px] border border-gray-400 px-1 bg-white outline-0 text-sm">
+          <select className="h-[26px] w-[370px] border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>..Select Any Value..</option>
           </select>
         </div>
-        <span>
-          <input type="text" className='py-4 border-2 border-gray-500 outline-0 w-[500px]' />
+        <span className='mt-3'>
+          <input type="text" className='py-4 border-2 border-gray-500 outline-0 w-[491px] mt-1 ml-2' />
         </span>
 
 
-<div className='w-1/2 flex justify-between '>
-            <div className='flex'>
+<div className='w-1/2 flex justify-between mt-1'>
+            <div className='flex '>
               <span className='text-sm px-2'>Customer Order</span>
-              <span className=''>
+              <span className='ml-2'>
                 <span className="text-red-500">*</span>
                 <input type="text" className="h-[22px] w-[110px] border bg-white border-gray-400 px-1" />
               </span>
@@ -109,7 +109,7 @@ const [date,setDate]=useState("13-jan-26")
 
 
         <div className="bg-white text-[11px] font-sans p-2">
-      <div className="space-y-2">
+      <div className="space-y-1">
 
         {/* Customer Order # + Order Date */}
         
