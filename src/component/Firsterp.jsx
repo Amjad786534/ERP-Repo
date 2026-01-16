@@ -115,7 +115,7 @@ const [date,setDate]=useState("13-jan-26")
         
 
         {/* Importer Bank */}
-        <div className="flex items-center">
+        <div className="flex justify-between w-1/2">
           <label className=" pr-3 "><span className='text-sm'>Importer Bank</span></label>
           <select className="h-[26px] w-[390px] border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>...Select Any Value...</option>
@@ -123,7 +123,7 @@ const [date,setDate]=useState("13-jan-26")
         </div>
 
         {/* Exporter Bank */}
-        <div className="flex items-center">
+        <div className="flex justify-between w-1/2">
           <label className="pr-3 "><span className='text-sm'>Exporter Bank</span></label>
           <select className="h-[26px] w-[390px] border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>...Select Any Value...</option>
