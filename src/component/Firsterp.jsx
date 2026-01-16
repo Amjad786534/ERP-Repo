@@ -30,20 +30,21 @@ const [date,setDate]=useState("13-jan-26")
         </div>
       </div>
 
-
-      <div className='w-[1000px] border border-gray-400  mt-3 ml-2'>
-        <div className='w-1/2 '>
-          <div className='w-full flex justify-between '>
+{/* Contract no and contract date */}
+      <div className='w-[1000px] border border-gray-400  mt-3 ml-2 bg-red-300'>
+        <div className='w-1/2 flex justify-between '>
             <div className='flex'>
-              <span className='text-sm '>Contact No.</span>
-              <span className='ml-7'>
+              <span className='text-sm px-2'>Contract No.</span>
+              <span className=''>
                 <span className="text-red-500">*</span>
                 <input type="text" className="h-[22px] w-[110px] border bg-white border-gray-400 px-1" />
               </span>
             </div>
              <div className="flex items-center ">
-            <label className="text-sm pr-2">Contract Date</label>
+            <label className="text-sm pr-2">Contract Date
+            </label>
             <div className="relative">
+              <span className='text-red-500'>*</span>
               <input
                 type="text"
                 value={date}
@@ -54,15 +55,14 @@ const [date,setDate]=useState("13-jan-26")
             </div>
           </div>
           </div>
-        </div>
 
 
-        <div className="flex items-center">
-          <label className=" text-right mr-1">
+        <div className="flex items-center mt-2 ml-2">
+          <label className=" text-right mr-4">
             <span className='text-sm'>Seller / Exporter</span>
           </label>
           <span className="text-red-500">*</span>
-          <select className="h-[26px] w-[390px] border border-gray-400 px-1 bg-white outline-0 text-sm">
+          <select className="h-[26px] w-[370px] border border-gray-400 px-1 bg-white outline-0 text-sm">
             <option>..Select Any Value..</option>
           </select>
         </div>
@@ -85,8 +85,8 @@ const [date,setDate]=useState("13-jan-26")
 
 <div className='w-1/2 flex justify-between '>
             <div className='flex'>
-              <span className='text-sm '>Customer Order</span>
-              <span className='ml-7'>
+              <span className='text-sm px-2'>Customer Order</span>
+              <span className=''>
                 <span className="text-red-500">*</span>
                 <input type="text" className="h-[22px] w-[110px] border bg-white border-gray-400 px-1" />
               </span>
